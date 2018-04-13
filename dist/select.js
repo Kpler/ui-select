@@ -416,6 +416,7 @@ uis.controller('uiSelectCtrl',
       if(!avoidReset) _resetSearchInput();
 
       $scope.$broadcast('uis:activate');
+      $scope.$emit('uis:activate');
       ctrl.open = true;
       ctrl.activeIndex = ctrl.activeIndex >= ctrl.items.length ? 0 : ctrl.activeIndex;
       // ensure that the index is set to zero for tagging variants

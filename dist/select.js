@@ -378,6 +378,7 @@ uis.controller('uiSelectCtrl',
       if(!avoidReset) _resetSearchInput();
 
       $scope.$broadcast('uis:activate');
+      $scope.$emit('uis:activate');
 
       ctrl.open = true;
 
